@@ -240,7 +240,7 @@ export default function PokerPointTracker() {
             style={styles.form}
           >
             <p>Enter player names:</p>
-            {playerNames.map((name, index) => (
+            {playerNames.map((_, index) => (
               <input
                 key={index}
                 type="text"
