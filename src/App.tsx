@@ -20,6 +20,7 @@ function App() {
 
   return (
     <>
+    <h1>Pocker Point Tracker</h1>
       <PockerPointTracker />
     </>
   )
