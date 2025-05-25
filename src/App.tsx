@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <div className='d-none'>
+      <div className='hidden'>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -29,8 +29,8 @@ function App() {
         </a>
       </div>
 
-      <h1 className='d-none'>Vite + React</h1>
-      <div className="card d-none">
+      <h1 className='hidden'>Vite + React</h1>
+      <div className="card hidden">
         <button onClick={()=>dispatch(fetchProducts({id:1}))}>
           count is {count}
         </button>
@@ -38,11 +38,11 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <button className='d-none' onClick={()=>dispatch(fetchProducts({id:undefined}))}>yes I am</button>
-      <p className="read-the-docs d-none">
+      <button className='hidden' onClick={()=>dispatch(fetchProducts({id:undefined}))}>yes I am</button>
+      <p className="read-the-docs hidden">
         Click on the Vite and React logos to learn more
       </p>
-      <button className='d-none' disabled={disabled} onClick={()=>dispatch(createNewUser({ username: 'john_doe', email: 'john@example.com', password: 'pass123' }))}>fetch based on id</button>
+      <button className='hidden' disabled={disabled} onClick={()=>dispatch(createNewUser({ username: 'john_doe', email: 'john@example.com', password: 'pass123' }))}>fetch based on id</button>
       
       <PockerPointTracker />
     </>
