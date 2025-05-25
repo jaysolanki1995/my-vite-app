@@ -21,6 +21,7 @@ function App() {
   return (
     <>
     <h1>Pocker Point Tracker</h1>
+    <p>Track your pocker points with ease!</p>
       <PockerPointTracker />
     </>
   )
