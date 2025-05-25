@@ -16,9 +16,11 @@ function App() {
   const count =  useApiState("counter","count");
   const disabled =  useApiState("product","loading");
 
+
+
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -40,7 +42,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <button disabled={disabled} onClick={()=>dispatch(createNewUser({ username: 'john_doe', email: 'john@example.com', password: 'pass123' }))}>fetch based on id</button>
+      <button disabled={disabled} onClick={()=>dispatch(createNewUser({ username: 'john_doe', email: 'john@example.com', password: 'pass123' }))}>fetch based on id</button> */}
+      
       <PockerPointTracker />
     </>
   )
